@@ -1,0 +1,31 @@
+------
+README
+------
+
+BACKGROUND
+This script was made in a hurry by me to fix my play counts in Banshee.
+Importing my iPod music library to Banshee worked out nicely, only a lot of
+play counts were not correctly imported.
+
+
+USEAGE
+The iTunes database is stored in the library path and is called: "iTunes Music
+Library.xml", check your iTunes preferences to find out where it exactly is.
+The Banshee database is a sqlite file located in "~/.config/banshee-1/banshee.db"
+Copy over these to files to the script directory rename and itunes library file
+to "Library.xml" and open it up in a text editor. Open up this file in a text
+editor and replace all the <integer> and <date> tag pairs with <string>. So
+<integer> becomes <string> and </integer> becomes </string>. The same goes for
+date.
+
+Run the script.
+Copy the banshee.db back to its original location, make sure you make a backup
+of your orginal database.
+
+This script worked for me but might require some changes for others. Feel free
+to make modifications.
+
+AUTHOR
+Ibrahim Muhammad
+nic-nac-project.de/~ibrahim
+
